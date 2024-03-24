@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>14章課題</title>
-    <meta name="description" content="このページは14章の課題です。">
+    <title>自己紹介サイト</title>
+    <meta name="description" content="自己紹介と自分の趣味を掲載するサイト">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./destyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-   <header>
-    <h1>MyProfile</h1>
-    <div>
-      <a href="">About</a>
-      <a href="">Works</a>
-    </div>
-   </header>
-   <main>
-    <section><img src="" alt=""></section>
-    <section>
-      <h2>About</h2>
-    </section>
-    <section>
-      <h2>Works</h2>
-    </section>
-   </main>
-   <footer></footer>
+  <body>  
+    <header>
+      <h1>MyProfile</h1>
+      <div>
+        <a href="">About</a>
+        <a href="">Works</a>
+      </div>.
+    </header>
+    <main>
+      <section class="main">
+        <img src="./img/main.png" alt="カメラの写真">
+      </section>
+      <section id="about">
+        <h2>About</h2>
+        <div>
+          <img src="./img/about.png" alt="About">
+          <div>
+            <p>Kazuki Asahina</p>
+            <ul>
+              <li>25歳 長野県佐久市出身</li>
+              <li>ソフトウェア業界でマーケティングに従事</li>
+              <li>趣味はカメラ、愛機はCanon</li>
+              <li>自然を撮影するのが好きで、海や山によく行く</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="works">
+        <h2>Works</h2>
+        <div class="flexbox-containaer">
+          <div id="works1" class>
+            <img src="./img/works1.png" alt="works1">
+          </div>
+          <p>新潟に訪れた際に、日本海の雄大さに魅了されて撮影した1枚</p>
+        </div>
+      </section>
+    </main>
+    <footer>© MyProfile. All rights reserved.</footer>
   </body>
 </html>
