@@ -1,4 +1,4 @@
-header{
+header {
   display: flex;
   max-width: 600px;
   justify-content: space-between;
@@ -6,23 +6,27 @@ header{
   align-items: center;
   font-weight: bold;
 }
-
-header h1{
+header h1 {
   font-size: 30px;
   border: 1px solid black;
   padding: 10px 20px;
 }
-
-header div a{
+header div a {
   font-size: 30px;
 }
 
-.main{
+.main {
+  width: 100%;
+  height: auto;
+}
+.main img {
   width: 100%;
   height: auto;
 }
 
-.main img{
-  width: 100%;
-  height: auto;
+.about {
+  text-align: center;
 }
+.about_h {
+  padding-right: 20px;
+}/*# sourceMappingURL=style.css.map */
