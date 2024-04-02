@@ -176,7 +176,7 @@ p{
     top: 280px;
     margin: 0 40px 0 40px;
     padding: 20px;
-    box-shadow: 5px 5px 10px raba(0, 0, 0, 0.05);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
   }
 
   /* 説明文の英語 */
@@ -671,7 +671,7 @@ p{
     top: 0;
     right: 0;
     width: 450px;
-    margin: 0 30px 40px 0;
+    margin: 0 0 30px 40px;
     border-radius: 432px 0 0 0;
   }
 
@@ -974,6 +974,45 @@ p{
 
   .vision-box > span > p{
     margin: 10px 0 0 0;
+  }
+
+  /* CASE */
+  #cases{
+    margin: 80px 20px 80px 20px ;
+  }
+
+  ul{
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;   
+  }
+
+  li{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .case-card{
+    background-color: #ffffff;
+    min-height: 200px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+  }
+
+  .case-img{
+    width: 100%;
+  }
+
+  .case-info{
+    padding: 10px 20px;
+  }
+
+  .case-name{
+    color: #2710d5;
+    font-size: 19px;
+  }
+
+  .case-content{
+    font-size: 14px;
   }
 
   /* 会社概要 */
