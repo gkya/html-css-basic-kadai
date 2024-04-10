@@ -1,3 +1,9 @@
+
+body{
+  font-family: "Noto Sans JP", Meiryo, Arial, sans-serif;
+  background-color: white;
+}
+
 header{
   display: flex;
   max-width: 600px;
@@ -5,15 +11,32 @@ header{
   margin: 30px auto;
   align-items: center;
   font-weight: bold;
+  @media screen and (max-width: 767px) {
+    display: block;
+    padding: 0 0 0 20px;
+  }
   
   & h1{
     font-size: 30px;
     border: 1px solid black;
     padding: 10px 20px;
+    @media screen and (max-width: 767px) {
+      border:  px solid black;
+      padding: 10px 20px;
+      margin: 0 50% 0 0;
+    }
   }
   & div a{
     font-size: 30px;
+    text-align: center;
+    @media screen and (max-width: 767px) {
+      text-align: left;
+    }
   }
+  & div .about_h{
+    padding-right: 20px;
+  }
+
 }
 
 .main{
@@ -25,9 +48,92 @@ header{
   }
 }
 
-.about{
+h2{
+  font-size: 34px;
+  font-weight: bold;
   text-align: center;
-  &_h{
-    padding-right: 20px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+#about{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 960px;
+  & img{
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border: 3px solid #999;
+    padding: 3px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  & .content{
+    margin: 0 auto;
+    padding-left: 40px;
+  }
+  & p{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 24px 0;
+  }
+  & ul{
+    display: block;
+    list-style: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+  }
+  & li{
+    font-size: 18px;
+    padding: 5px;
+    @media screen and (max-width: 767px) {
+      font-size: 15px;
+    }
   }
 }
+
+#works{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto 20px auto;
+  max-width: 960px;
+  @media screen and (max-width: 767px) {
+    flex-direction: column; 
+  }
+  & img{
+    width: 100%;
+    height: auto;
+  }
+  & p{
+    padding: 18px 0;
+  }
+  & .flexbox-item{
+    padding-bottom: 60px;
+    width: 25%;
+    margin: auto;
+    @media screen and (max-width: 767px) {
+      width: 95%;
+      text-align: center;
+    }
+    
+  }
+}
+
+footer{
+  display: block;
+  & p{
+    text-align: center;
+    margin: 18px 0;
+    padding-bottom: 20px;
+  }
+}
+

@@ -3,6 +3,7 @@
   <head>
     <title>自己紹介サイト</title>
     <meta name="description" content="自己紹介と自分の趣味を掲載するサイト">
+    <meta name="viewport" content="width=device-width, initial-sacale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./destyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,21 +13,21 @@
   </head>
   <body>  
     <header>
-      <h1>MyProfile</h1>
+      <h1>My Profile</h1>
       <div>
         <a class="about_h" href="./index.html#about">About</a>
         <a class="works_h" href="./index.html#works">Works</a>
       </div>
     </header>
     <main>
-      <section class="main">
-        <img src="./img/main.png" alt="カメラの写真">
-      </section>
-      <section id="about">
+      <article>
+        <section class="main">
+          <img src="./img/main.png" alt="カメラの写真">
+        </section>
         <h2>About</h2>
-        <div>
-          <img src="./img/about.png" alt="About">
-          <div>
+        <section id="about">
+          <img src="./img/about.png" alt="Person">
+          <div class="content">
             <p>Kazuki Asahina</p>
             <ul>
               <li>25歳 長野県佐久市出身</li>
@@ -35,26 +36,28 @@
               <li>自然を撮影するのが好きで、海や山によく行く</li>
             </ul>
           </div>
-        </div>
-      </section>
-      <section id="works">
+        </section>
         <h2>Works</h2>
-        <div class="flexbox">
-          <div class="flexbox-container">
+        <section id="works">
+          <div class="flexbox-item">
             <img src="./img/works1.png" alt="新潟の海">
             <p>新潟に訪れた際に、日本海の雄大さに魅了されて撮影した1枚</p>
           </div>
-          <div class="flexbox-container">
+          <div class="flexbox-item">
             <img src="./img/works2.png" alt="長野御嶽山">
             <p>地元長野の木曽町から撮影した、冠雪した御嶽山</p>
           </div>
-          <div class="flexbox-container">
+          <div class="flexbox-item">
             <img src="./img/works3.png" alt="京都の町並み">
             <p>京都で撮影した、明け方の古き良き日本の町並み</p>
           </div>
-        </div>
-      </section>
+        </section>
+      </article>
     </main>
-    <footer>© MyProfile. All rights reserved.</footer>
+    <footer>
+      <p>
+        &copy; MyProfile. All rights reserved.
+      </p>
+    </footer>
   </body>
 </html>
